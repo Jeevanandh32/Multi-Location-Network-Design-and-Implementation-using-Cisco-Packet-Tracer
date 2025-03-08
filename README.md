@@ -1,6 +1,6 @@
 ![Screenshot 2025-01-12 005444](https://github.com/user-attachments/assets/780c62ea-579d-4d28-bcda-c74783617a47)
 
-### MULTI-LOCATION NETWORK DESIGN AND IMPLEMENTATION
+## MULTI-LOCATION NETWORK DESIGN AND IMPLEMENTATION
 
 This repository showcases a project focused on designing and implementing a multi-location networking strategy for a small organization with five branch offices: Boston, Mumbai, New York, London, and Germany. The project demonstrates advanced networking concepts, including VLANs, OSPF routing, HSRP configuration, and security measures.
 
