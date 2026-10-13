@@ -1,3 +1,5 @@
+![High-Availability Multi-Site Network Design](assets/banner.png)
+
 ![Screenshot 2025-01-12 005444](https://github.com/user-attachments/assets/780c62ea-579d-4d28-bcda-c74783617a47)
 
 ## MULTI-LOCATION NETWORK DESIGN AND IMPLEMENTATION
