@@ -1,55 +1,36 @@
+# High-Availability Multi-Site Network Lab
+
 ![High-Availability Multi-Site Network Design](assets/banner.png)
 
-![Screenshot 2025-01-12 005444](https://github.com/user-attachments/assets/780c62ea-579d-4d28-bcda-c74783617a47)
+A Cisco Packet Tracer academic project covering five locations: Boston, Mumbai, New York, London, and Germany. The design uses eight routers and eleven switches to practice addressing, routing, segmentation, and redundancy.
 
-## MULTI-LOCATION NETWORK DESIGN AND IMPLEMENTATION
+## Implemented and documented topics
 
-This repository showcases a project focused on designing and implementing a multi-location networking strategy for a small organization with five branch offices: Boston, Mumbai, New York, London, and Germany. The project demonstrates advanced networking concepts, including VLANs, OSPF routing, HSRP configuration, and security measures.
+- Department VLANs, trunking, IP subnetting, and DHCP.
+- Multi-area OSPF and an EIGRP lab configuration.
+- HSRP gateway redundancy with priority, preemption, and 2-second hello / 6-second hold timers.
+- Rapid PVST+, PortFast, BPDU Guard, and LACP EtherChannel.
+- ACLs and switch port security.
+- GRE tunneling between the Boston and Mumbai headquarters.
+- Routing, VLAN, and connectivity checks documented in the project report.
 
-Features
-- IP Subnetting: Efficient allocation of IPs for different departments across all locations.
-- DHCP Configuration: Centralized and decentralized DHCP setup for dynamic IP allocation.
-- VLAN Implementation: Logical segmentation of networks to improve security and reduce broadcast traffic.
-- OSPF Routing: Optimized dynamic routing across all locations for faster convergence.
-- HSRP Configuration: High availability for gateway redundancy at critical locations.
-- Security Measures: Implementation of network security policies, including access control lists (ACLs).
-- Network Optimization: Fine-tuning of configurations for high performance and reliability.
+## Open the lab
 
-Prerequisites
-- Networking equipment (e.g., Cisco routers and switches or a network simulation tool like Cisco Packet Tracer).
-- Basic knowledge of networking concepts, including VLANs, routing protocols, and DHCP.
-
-Getting Started
-
-Clone the Repository
-```
-git clone https://github.com/YOUR_USERNAME/MULTI-LOCATION-NETWORK-DESIGN.git
-cd MULTI-LOCATION-NETWORK-DESIGN
+```bash
+git clone https://github.com/Jeevanandh32/Multi-Location-Network-Design-and-Implementation-using-Cisco-Packet-Tracer.git
+cd Multi-Location-Network-Design-and-Implementation-using-Cisco-Packet-Tracer
 ```
 
-Configuration Details
-- Each location is assigned specific VLANs for departments (e.g., HR, Technical, Finance).
-- Dynamic Host Configuration Protocol (DHCP) managed on servers located in the Technical VLAN.
-- OSPF implemented for routing between locations with proper area designations.
-- High-availability setup using HSRP at key locations.
+Open `MULTI-LOCATION NETWORK DESIGN.pkt` in Cisco Packet Tracer. Review the report alongside the topology for device configuration and verification screenshots.
 
-How It Works
-1. VLANs are created and assigned to departments to logically segment the network.
-2. OSPF routing ensures efficient inter-location communication.
-3. HSRP is configured for gateway redundancy in critical offices to minimize downtime.
-4. DHCP servers dynamically assign IPs to devices in their respective VLANs.
+## Files
 
-Example Use Case
-- Multi-branch enterprises requiring seamless connectivity between locations.
-- Scenarios where high availability and network performance are critical.
+- [Packet Tracer topology](MULTI-LOCATION%20NETWORK%20DESIGN.pkt)
+- [Original academic report](TELE5330_002313120_Ravi_Jeevanandh_Project%202.pdf)
 
-Files
-- Configuration files for each location's network.
-- Detailed network topology diagrams.
-- Project documentation.
+## Verification scope and report clarification
 
-Contributions
-Feel free to fork this repository and submit pull requests for any enhancements or additional features.
-
-License
-This project is licensed under the MIT License.
+- This is a simulated academic network, not a production deployment.
+- The report's page 40 describes the GRE tunnel as encrypted, but the included configuration demonstrates GRE only. It does not establish IPsec protection. The project summary therefore claims GRE tunneling; a GRE-over-IPsec claim needs the corresponding crypto configuration and security-association verification.
+- HSRP timer settings and redundancy configuration are not measured convergence times. No sub-50-ms failover or zero-packet-loss guarantee is established by the committed evidence.
+- The PDF remains the original course submission. These clarifications apply when using its contents in a portfolio or resume.
